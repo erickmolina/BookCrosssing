@@ -64,12 +64,15 @@ angular.module('myApp', []).controller('perfil', function ($scope,$http,$compile
 		url:'https://www.googleapis.com/books/v1/volumes',
 		params: {q : title}}).
 		success(function(data, status, headers, config) {
-			//console.log(data.items[0].volumeInfo);
+			//alert(data.items[0].volumeInfo.authors[9]);
 			//data.items[i].volumeInfo.
+			console.log(data.items);
 			var s="";
-			for (i = 0; i < data.items.length; i++){
-				s+="<li > <h3 href>"+data.items[i].volumeInfo.title+"</h3><h5> Autor: "+data.items[i].volumeInfo.authors[0]+"</h5><p> Editorial: "+data.items[i].volumeInfo.publisher+"</p></li>";
-			}
+			//for (i = 0; i < data.items.length; i++){
+				//s+="<li > <h3 href>"+data.items[0].volumeInfo.title+"</h3><a> Autor: "+data.items[0].volumeInfo.authors[0]+"</a><p> Categoria: "+data.items[0].volumeInfo.categories[0]+"</p></li>";
+				s+="<li > <h3 href>"+data.items[0].volumeInfo.title+"</h3><h5> Categoria: "+data.items[0].volumeInfo.categories[0]+"</h5><p> Editorial:"+data.items[0].volumeInfo.publisher+"</p></li>";
+
+			//}
 			$("#info").append(s).listview().listview('refresh');
 		}).
 		error(function(data, status, headers, config) {

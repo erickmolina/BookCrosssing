@@ -11,7 +11,14 @@ angular.module('myApp', []).controller('menu', function ($scope,$http,$compile) 
 	};
 	
 	 function revoke() {
-        openFB.logout();
-               
+        openFB.revokePermissions(
+                function() {
+                    alert('Permissions revoked');
+                },
+                errorHandler);
+    }
+
+    function errorHandler(error) {
+        //alert(error.message);
     }
 });

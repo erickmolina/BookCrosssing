@@ -26,5 +26,8 @@ angular.module('myApp', []).controller('libros', function ($scope,$http,$compile
 		localStorage.idlibro= id;
 		window.location.href="perfil.html";
 	};
+	$scope.back = function (){
+		window.location.href='menu.html';
+	};
 	
 });
