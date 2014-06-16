@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name = "format-detection" content = "telephone=yes"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/openfb.js"></script>
+		<script src="js/menu.js"></script>
+	<style>
+		.img {
+			height: auto;
+			width: auto;
+			max-width: 100%;
+			margin:10px;
+		}
+		.texto{
+			text-align:center;
+			width:auto;
+		}
+	</style>
+    </head>
+    <body ng-controller ="menu">
+    	<div data-role="page" id="home" >
+    		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#panel" data-icon="bars" data-iconpos="notext">Menu</a>
+    			<h1>BOOKCROSSING</h1>
+    		</div>
+			<div  data-theme ="b"data-role="panel" data-position="left" data-display="push" id="panel">  
+			<ul data-role="listview" data-inset='false' data-theme="b">   
+					<li><a>About Us</a></li>  
+					<li><a ng-click="logout()"><h3>Logout</h3><p>Salir</p></a></li>  
+				</ul>  
+			</div>  
+    		<div data-role="content" data-theme="c" >
+			
+			<div class="ui-grid-a springboard">
+				<div class="ui-block-a">
+				
+					<a href="mapa.html" rel="external" data-transition="pop"><img class ="img"src="img/mapa.png"></img></a>
+				</div>
+				<div class="ui-block-b">
+					<a href="libros.html" rel="external" data-transition="pop"> <img class ="img" src="img/logo.png"></img> </a>
+				</div>
+				<div class="ui-block-a">
+					<a href="agregar.html"  rel="external" data-transition="pop"><img class ="img"src="img/agregar.png"></img> </a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#"  rel="external" data-transition="pop"><img class ="img"src="img/leerqr.png"></img> </a>
+				</div>
+				<div class="ui-block-a">
+					<a href="capturar.html"  rel="external" data-transition="pop"><img class ="img"src="img/capturar.png"></img> </a>
+				</div>
+				<div class="ui-block-b">
+					<a href="liberar.html"  rel="external" data-transition="pop"><img class ="img"src="img/liberar.png"></img> </a>
+				</div>
+			</div>
+    		</div>
+			<div data-role="footer"  data-position="fixed" data-theme="b" >
+			
+				<h4>bookcrossingcr.net</h4>
+    		</div>
+    	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

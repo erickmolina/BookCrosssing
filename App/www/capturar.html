@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.2.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/captura.js"></script>
+	<style>
+		.imgmd {
+			height: 100px;
+			width: 100px;
+			max-width: 100%;
+			margin:10px;
+		}
+	</style>
+    </head>
+    <body  ng-controller="capturar">
+    	<div data-role="page" id="home">
+		
+    		<div data-role="header" data-position="fixed" data-theme="b"  data-add-back-btn="true" >
+				<a href="#"  data-icon="back"   >Back</a>
+    			<h1>BOOKCROSSING</h1>
+    		</div>
+
+    		<div data-role="content" data-theme="d" >
+				<div id="dbusc" data-demo-html="true">
+				
+				</div>
+				<ul id='lista' data-role='listview' data-inset='true' >
+				</ul>
+    		</div>
+			<div data-role="footer"   data-position="fixed" data-theme="b" >
+			
+				<h4>bookcrossingcr.net</h4>
+    		</div>
+    	</div>
+		
+		
+	<script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

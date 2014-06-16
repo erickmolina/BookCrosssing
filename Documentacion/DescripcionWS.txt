@@ -1,0 +1,104 @@
+Descripción de los Web Services
+
+Login 
+Inicio de sesion de un usuario
+URL: bookcrossing-electivamoviles.rhcloud.com/login
+Parámetros: correo, contrasena
+Método: POST
+
+ejemplo
+ 
+correo: erick@bookcrossingcr.com
+contrasena: admin
+
+Registrar Usuario
+Agrega un nuevo usuario al sistema
+URL: bookcrossing-electivamoviles.rhcloud.com/addUsuario
+Parámetros: usuario,correo,contrasena
+Método:POST
+
+ejemplo
+
+usuario:pepe
+correo:pepe@bookcrossingcr.net
+contrasena: admin
+
+
+Obtener Libros Liberados
+Obtiene el nombre, categoria y ubicacion de los libros liberados
+URL: bookcrossing-electivamoviles.rhcloud.com/getFreeBooks
+Parámetros:books
+Metódo: GET
+
+ejemplo
+
+books: all
+
+
+Obtener Informacion Libros
+Obtiene el nombre, categoria de libros
+URL:bookcrossing-electivamoviles.rhcloud.com/getBooks
+Parámetros:books
+Metódo: GET
+
+ejemplo
+
+books: all
+
+Obtener Informacion de un libro
+Obtiene todos los datos del libro
+URL: bookcrossing-electivamoviles.rhcloud.com/getInfoBook
+Parámetros:idbook
+Metódo: GET
+
+ejemplo
+
+idbook: 1
+
+Obtener Comentarios de un libro
+Obtiene todos los datos del libro
+URL: bookcrossing-electivamoviles.rhcloud.com/getCommentsBook
+Parámetros:idbook
+Metódo: GET
+
+ejemplo
+
+idbook: 1
+
+
+Obtener Lectores de un libro
+Obtiene todos los datos del libro
+URL: bookcrossing-electivamoviles.rhcloud.com/getReadsBook
+Parámetros:idbook
+Metódo: GET
+
+ejemplo
+
+idbook: 1
+
+Agregar un comentario
+El usuario puede crear un comentario en el perfil de un libro
+URL: bookcrossing-electivamoviles.rhcloud.com/addComment
+Parámetros:idlibro,idusuario,comment
+Metódo: POST
+
+ejemplo
+
+idbook: 1
+idusuario:1
+comment: muy buen libro
+
+
+Agregar un Libro
+El usuario agrega un libro al sistema
+URL: URL:URL: bookcrossing-electivamoviles.rhcloud.com/addBook
+Parámetros:name,desc, cate, lat, lon
+Metódo: POST
+
+ejemplo
+name: Unica mirando al mar
+desc:Es un libro
+cate:2
+lat:9.98
+lon: -84.07
+
